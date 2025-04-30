@@ -1,11 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
-    
+    <header>
+        <div class="portfolio">
+            Portfolio
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre Mi</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#redes">Redes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <div class="sobre-mi-contenedor">
+                <div class="sobre-mi-foto-contenedor">
+                    <img src="foto.jpeg" alt="Foto" class="sobre-mi-foto-circular">
+                </div>
+                <h3 class="nombre">Nahuel Pablo Martínez</h3>
+                <div class="sobre-mi-info">
+                    <p>¡Hola! Mi nombre es Nahuel, vivo en Buenos Aires y soy estudiante 
+                        de la Técnicatura Universitaria en Programación (UTN-FRGP).</p>
+                    <p>Trabajo como Account Receivable Analyst y
+                         Key User en el sistema de gestión Microsoft OneNavision.</p>
+                    <p>En estos ultimos años adquirí conocimientos en C++, C#, SQL, HTML y CSS.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="conocimientos">
+            <h2>Conocimientos</h2>
+            <div class="conocimientos-contenedor">
+                <div class="conocimientos-imagen-contenedor">
+                    <img src="cpp.png" alt="cpp">
+                    <img src="csharp.png" alt="csharp">
+                    <img src="sql.png" alt="cpp">
+                    <img src="html.png" alt="csharp">
+                    <img src="css.png" alt="csharp">
+                </div>
+            </div>
+           
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="contenedor-de-cartas">
+                <div class="carta-proyecto">
+                    <h3>Embaucado</h3>
+                    <img src="embaucado.png" alt="Embaucado">
+                    <p>Aplicación de consola que emula un juego de cartas realizado como trabajo final 
+                        para la materia Programación I.</p>
+                    <a href="https://github.com/nahuelpmartinez/Embaucado">Ver Proyecto</a>
+                </div>
+                <div class="carta-proyecto">
+                    <h3>Gestión de articulos</h3>
+                    <img src="gestion.png" alt="SDG">
+                    <p>Aplicación de escritorio generica para la gestión de artículos de un catálogo 
+                        de un comercio.</p>
+                    <a href="https://github.com/nahuelpmartinez/SDG">Ver Proyecto</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="POST"> <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" id="btn-contacto">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="redes">
+        <nav>
+            <h3>Redes</h3>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/nahuelpmartinez/">LinkedIn</a></li>
+                <li><a href="https://github.com/nahuelpmartinez">GitHub</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
